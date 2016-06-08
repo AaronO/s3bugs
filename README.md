@@ -18,3 +18,16 @@ Results of tests I ran:
 
 #### With aws-cli 1.6.3
 
+```
+❯ ./test.sh             ⇣
+download: s3://data/sample.tgz to ./s3.tgz
+## Hashed files:
+-rw-r--r--  1 aaron  staff    16M Jun  8 15:51 curl.tgz
+-rw-r--r--  1 aaron  staff    23M Jun  7 16:07 s3.tgz
+5ac6d976e94f661a742980be57431df2d0ad295d  s3.tgz
+c8ade21035760ea622c25a1cc9bdabb6d6cfb14c  curl.tgz
+
+## Original:
+-rw-r--r--  1 aaron  staff    16M Jun  7 16:07 /Users/aaron/git/s3bugs/data/sample.tgz
+c8ade21035760ea622c25a1cc9bdabb6d6cfb14c  /Users/aaron/git/s3bugs/data/sample.tgz
+```
