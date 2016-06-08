@@ -47,3 +47,19 @@ c8ade21035760ea622c25a1cc9bdabb6d6cfb14c  curl.tgz
 -rw-r--r--  1 aaron  staff    16M Jun  7 16:07 /Users/aaron/git/s3bugs/data/sample.tgz
 c8ade21035760ea622c25a1cc9bdabb6d6cfb14c  /Users/aaron/git/s3bugs/data/sample.tgz
 ```
+
+#### With aws-cli 1.10.6 (used in new GitBook builder)
+
+```
+(s3)❯ ./test.sh
+download: s3://data/sample.tgz to ./s3.tgz
+## Hashed files:
+-rw-r--r--  1 aaron  staff    16M Jun  8 15:59 curl.tgz
+-rw-r--r--  1 aaron  staff    16M Jun  7 16:07 s3.tgz
+c8ade21035760ea622c25a1cc9bdabb6d6cfb14c  s3.tgz
+c8ade21035760ea622c25a1cc9bdabb6d6cfb14c  curl.tgz
+
+## Original:
+-rw-r--r--  1 aaron  staff    16M Jun  7 16:07 /Users/aaron/git/s3bugs/data/sample.tgz
+c8ade21035760ea622c25a1cc9bdabb6d6cfb14c  /Users/aaron/git/s3bugs/data/sample.tgz
+```
